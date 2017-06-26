@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Nunit_Tests.main
 {
 
-    class Wektor
+    public class Wektor :IWektor
     {
         int x, y, z;
 
@@ -16,6 +16,13 @@ namespace Nunit_Tests.main
             x = 0;
             y = 0;
             z = 0;
+        }
+
+        public Wektor(Wektor V)
+        {
+            this.x = V.x;
+            this.y = V.y;
+            this.z = V.z;
         }
 
         public Wektor(int x)
@@ -34,6 +41,21 @@ namespace Nunit_Tests.main
             this.x = x;
             this.y = y;
             this.z = z;
+        }
+
+        public int Get_x()
+        {
+            return this.x;
+        }
+
+        public int Get_y()
+        {
+            return this.y;
+        }
+
+        public int Get_z()
+        {
+            return this.z;
         }
 
         public void Add_all(int num)

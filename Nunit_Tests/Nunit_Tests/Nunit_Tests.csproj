@@ -38,7 +38,7 @@
   <ItemGroup>
     <Compile Include="tests\Wektor_Tests.cs" />
     <Compile Include="main\Wektor.cs" />
-    <Compile Include="main\Wektor_Interface.cs" />
+    <Compile Include="main\IWektor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
